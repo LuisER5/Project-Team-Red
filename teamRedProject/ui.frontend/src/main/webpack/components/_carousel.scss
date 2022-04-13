@@ -1,0 +1,95 @@
+.cmp-carousel {
+    margin: 40px 0;
+}
+.cmp-carousel__content {
+    padding: 0 26px;
+}
+.cmp-carousel__item {
+    padding: 30px 0;
+    border-bottom: 1px solid #E6E7E8;
+}
+.cmp-carousel__actions {
+    position: relative;
+}
+.cmp-carousel__action {}
+.cmp-carousel__action--disabled {}
+.cmp-carousel__action--previous,
+.cmp-carousel__action--next {
+    top: -100px;
+    position: absolute;
+    background-color: transparent;
+    border: none;
+    width: 26px;
+}
+.cmp-carousel__action--previous {
+    left: -26px;
+}
+.cmp-carousel__action--next {
+    right: -26px;
+}
+
+.cmp-carousel__action--previous .cmp-carousel__action-icon {
+    background-image: url(/apps/teamRedProject/clientlibs/clientlib-site/resources/images/chevron-left.svg);
+}
+.cmp-carousel__action--next .cmp-carousel__action-icon {
+    background-image: url(/apps/teamRedProject/clientlibs/clientlib-site/resources/images/chevron-right.svg);
+}
+
+.cmp-carousel__action--pause {}
+.cmp-carousel__action--play {}
+.cmp-carousel__action-icon {
+    display: block;
+    background-size: cover;
+    height: 16px;
+    width:  16px;
+}
+.cmp-carousel__action-text {
+    display: none;
+}
+.cmp-carousel__indicators {}
+.cmp-carousel__indicator {
+      width: 6px;
+      height: 6px;
+      margin: 0 13px;
+      background-color: #C3C4C5;
+      opacity: 1;
+      border-radius: 50%;
+}
+.cmp-carousel__indicator--active {
+    background-color: #00BCEB;
+}
+
+@media (min-width: 992px) {
+  .cmp-carousel {
+    margin: 74px 0;
+  }
+
+  .cmp-carousel__content {
+    padding: 0 146.6px;
+  }
+
+  .cmp-carousel__item {
+    padding: 0 30px;
+    border-bottom: none;
+    border-left: 1px solid #E6E7E8;
+  }
+
+  .cmp-carousel__action--next,
+  .cmp-carousel__action--previous {
+    width: 100px;
+  }
+
+  .cmp-carousel__action-icon {
+    height: 32px;
+    width:  32px;
+  }
+
+  .cmp-carousel__action--previous {
+    left: -100px;
+  }
+
+  .cmp-carousel__action--next {
+    right: -100px;
+  }
+}
+

@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:granite="http://www.adobe.com/jcr/granite/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+          jcr:primaryType="nt:unstructured"
+          jcr:title="Button"
+          sling:resourceType="cq/gui/components/authoring/dialog"
+          helpPath="https://www.adobe.com/go/aem_cmp_button_v1"
+          trackingFeature="core-components:button:v1">
+    <content
+            granite:class="cmp-button__editor"
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="granite/ui/components/coral/foundation/container">
+        <items jcr:primaryType="nt:unstructured">
+            <tabs
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="granite/ui/components/coral/foundation/tabs"
+                    maximized="{Boolean}true">
+                <items jcr:primaryType="nt:unstructured">
+                    <styles
+                            jcr:primaryType="nt:unstructured"
+                            jcr:title="Styles"
+                            sling:resourceType="granite/ui/components/coral/foundation/container"
+                            margin="{Boolean}true">
+                        <items jcr:primaryType="nt:unstructured">
+                            <columns
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="granite/ui/components/coral/foundation/fixedcolumns"
+                                    margin="{Boolean}true">
+                                <items jcr:primaryType="nt:unstructured">
+                                    <column
+                                            jcr:primaryType="nt:unstructured"
+                                            sling:resourceType="granite/ui/components/coral/foundation/container">
+                                        <items jcr:primaryType="nt:unstructured">
+                                            <style
+                                                    jcr:primaryType="nt:unstructured"
+                                                    sling:resourceType="granite/ui/components/coral/foundation/form/select"
+                                                    fieldDescription="Select the style"
+                                                    fieldLabel="Styles button"
+                                                    name="./style">
+                                                <items jcr:primaryType="nt:unstructured">
+                                                    <bp
+                                                            jcr:primaryType="nt:unstructured"
+                                                            text="Primary"
+                                                            value="btn-primary"/>
+                                                    <bs
+                                                            jcr:primaryType="nt:unstructured"
+                                                            text="Secondary"
+                                                            value="btn-secondary"/>
+                                                    <bop
+                                                            jcr:primaryType="nt:unstructured"
+                                                            text="Outline Primary"
+                                                            value="btn-outline-primary p-2"/>
+                                                    <bos
+                                                            jcr:primaryType="nt:unstructured"
+                                                            text="Outline Secondary"
+                                                            value="btn-outline-secondary p-2"/>
+                                                </items>
+                                            </style>
+                                        </items>
+                                    </column>
+                                </items>
+                            </columns>
+                        </items>
+                    </styles>
+
+                    <cq:styles
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="granite/ui/components/coral/foundation/include"
+                            path="/mnt/overlay/cq/gui/components/authoring/dialog/style/tab_edit/styletab"
+                            granite:hide="{Boolean}true"/>
+                </items>
+            </tabs>
+        </items>
+    </content>
+</jcr:root>
